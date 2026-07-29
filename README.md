@@ -9,7 +9,7 @@
 </h3>
 
 <p align="center">
-  <a href="https://nvstudio.is-a.dev">Live Demo</a>
+  <a href="https://nvstudio-five.vercel.app/">Live Demo</a>
 </p>
 
 ---
