@@ -2,7 +2,7 @@
    NV Studio — script.js (JavaScript puro, sem dependências)
    ========================================================================== */
 
-const NUMERO_WHATSAPP = "5511999999999";
+const NUMERO_WHATSAPP = "5511917152683";
 
 /* --------------------------------------------------------------------------
    Projetos reais do portfólio. Cada um aponta para um site de verdade,
@@ -28,6 +28,36 @@ const projetos = [
     corB: "#B08D3E",
     url: "exemplos/advocacia/index.html",
   },
+ {
+  id: 2,
+  slug: "clara-floricultura",
+  nome: "Clara Floricultura",
+  categoria: "Floricultura",
+  resumo: "Site moderno para apresentação da floricultura e divulgação dos produtos.",
+  descricao: "Projeto desenvolvido para transmitir delicadeza, elegância e proximidade com os clientes. O site apresenta os principais arranjos, buquês e serviços da floricultura, com um layout responsivo, navegação intuitiva e foco na experiência do usuário.",
+  objetivo: "Fortalecer a presença online da floricultura, apresentar os produtos e facilitar o contato com clientes.",
+  desafio: "Criar uma identidade visual que transmitisse a beleza das flores sem comprometer a organização das informações.",
+  solucao: "Foi desenvolvido um design leve e sofisticado, utilizando cores suaves, imagens em destaque e uma estrutura simples que valoriza os produtos e torna a navegação agradável.",
+  tempo: "1 semana",
+  corA: "#4A7C59",
+  corB: "#F6C6D4",
+  url: "exemplos/Floricultura_clara/index.html",
+},
+{
+  id: 3,
+  slug: "lume-odontologia",
+  nome: "Lume Odontologia",
+  categoria: "Clínica Odontológica",
+  resumo: "Landing page profissional para apresentar a clínica e seus serviços.",
+  descricao: "Site institucional criado para transmitir confiança, credibilidade e modernidade. O projeto destaca os tratamentos oferecidos, informações sobre a clínica, equipe e canais de contato, proporcionando uma experiência clara e acessível em qualquer dispositivo.",
+  objetivo: "Atrair novos pacientes, fortalecer a marca da clínica e facilitar o agendamento de consultas.",
+  desafio: "Desenvolver uma interface que equilibrasse um visual moderno com a sensação de segurança e profissionalismo esperada pelos pacientes.",
+  solucao: "Foi criado um layout limpo, com hierarquia visual bem definida, cores que remetem à saúde e confiança, além de seções estratégicas para apresentação dos serviços e chamadas para agendamento.",
+  tempo: "1 semana",
+  corA: "#0E1B33",
+  corB: "#49B6C7",
+  url: "exemplos/lume_odontologia/index.html",
+},
 ];
 
 /* --------------------------------------------------------------------------
