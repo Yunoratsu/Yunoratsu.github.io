@@ -1,0 +1,696 @@
+/* ===============================
+   CONFIGURAÇÕES GERAIS
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+
+    font-family: 'Segoe UI', Arial, sans-serif;
+
+    background: #ffffff;
+
+    color: #333;
+
+    line-height: 1.6;
+
+}
+
+
+
+img {
+
+    width: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+}
+
+
+
+/* ===============================
+   HEADER
+================================ */
+
+
+header {
+
+    width: 100%;
+
+    padding: 20px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    background: white;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 1000;
+
+    box-shadow: 0 2px 15px rgba(0,0,0,0.05);
+
+}
+
+
+
+.logo {
+
+    font-size: 26px;
+
+    font-weight: bold;
+
+    color: #2f6b45;
+
+}
+
+
+
+nav {
+
+    display: flex;
+
+    gap: 30px;
+
+}
+
+
+
+nav a {
+
+    text-decoration: none;
+
+    color: #444;
+
+    font-weight: 500;
+
+    transition: .3s;
+
+}
+
+
+
+nav a:hover {
+
+    color:#d56b8b;
+
+}
+
+
+
+
+.btn-whatsapp {
+
+
+    background:#2f6b45;
+
+    color:white;
+
+    padding:12px 22px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+
+
+.btn-whatsapp:hover {
+
+    background:#245235;
+
+}
+
+
+
+
+
+
+/* ===============================
+   HERO
+================================ */
+
+
+.hero {
+
+    min-height: 80vh;
+
+    display:flex;
+
+    align-items:center;
+
+    padding:60px 8%;
+
+    background:
+
+    linear-gradient(
+        rgba(255,255,255,.85),
+        rgba(255,255,255,.85)
+    ),
+
+    url("assets/img/banner.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+}
+
+
+
+.hero-text {
+
+    max-width:650px;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:55px;
+
+    color:#275c3d;
+
+    line-height:1.1;
+
+    margin-bottom:20px;
+
+}
+
+
+
+.hero p {
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+    color:#555;
+
+}
+
+
+
+.btn-primary {
+
+    background:#d56b8b;
+
+    color:white;
+
+    padding:15px 35px;
+
+    border-radius:30px;
+
+    text-decoration:none;
+
+    font-weight:bold;
+
+    display:inline-block;
+
+    transition:.3s;
+
+}
+
+
+.btn-primary:hover {
+
+    background:#b95372;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   PRODUTOS
+================================ */
+
+
+.produtos {
+
+    padding:80px 8%;
+
+}
+
+
+
+h2 {
+
+    text-align:center;
+
+    font-size:38px;
+
+    color:#275c3d;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.categorias {
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    flex-wrap:wrap;
+
+    margin-bottom:40px;
+
+}
+
+
+
+.categorias button {
+
+
+    border:none;
+
+    background:#f7d7df;
+
+    padding:12px 25px;
+
+    border-radius:30px;
+
+    cursor:pointer;
+
+    font-weight:bold;
+
+    transition:.3s;
+
+
+}
+
+
+
+.categorias button:hover {
+
+
+    background:#d56b8b;
+
+    color:white;
+
+}
+
+
+
+
+
+
+.grid-produtos {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+
+}
+
+
+
+
+
+.produto {
+
+
+    background:white;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    padding-bottom:25px;
+
+    transition:.3s;
+
+
+}
+
+
+
+.produto:hover {
+
+    transform:translateY(-8px);
+
+}
+
+
+
+.produto img {
+
+    height:280px;
+
+}
+
+
+
+.produto h3 {
+
+
+    font-size:23px;
+
+    color:#275c3d;
+
+    padding:20px 20px 5px;
+
+
+}
+
+
+
+.produto p {
+
+
+    padding:0 20px;
+
+    color:#666;
+
+
+}
+
+
+
+.produto strong {
+
+
+    display:block;
+
+    padding:15px 20px;
+
+    font-size:22px;
+
+    color:#d56b8b;
+
+
+}
+
+
+
+.produto button {
+
+
+    margin-left:20px;
+
+    background:#2f6b45;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 25px;
+
+    border-radius:25px;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+/* ===============================
+   SOBRE
+================================ */
+
+
+.sobre {
+
+
+    padding:80px 15%;
+
+    background:#faf8f5;
+
+    text-align:center;
+
+
+}
+
+
+
+.sobre p {
+
+    font-size:20px;
+
+    color:#555;
+
+}
+
+
+
+
+
+
+/* ===============================
+   BENEFÍCIOS
+================================ */
+
+
+.beneficios {
+
+    padding:80px 8%;
+
+}
+
+
+
+.beneficios-grid {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:25px;
+
+
+}
+
+
+
+.beneficios-grid div {
+
+
+    text-align:center;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    background:#fff;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.06);
+
+
+}
+
+
+
+.beneficios h3 {
+
+    color:#d56b8b;
+
+}
+
+
+
+
+
+
+
+/* ===============================
+   DEPOIMENTOS
+================================ */
+
+
+.depoimentos {
+
+
+    padding:80px 8%;
+
+    background:#faf8f5;
+
+
+}
+
+
+
+.avaliacoes {
+
+
+    display:grid;
+
+    grid-template-columns:repeat(5,1fr);
+
+    gap:20px;
+
+
+}
+
+
+
+.avaliacoes p {
+
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0 5px 20px rgba(0,0,0,.05);
+
+}
+
+
+
+
+
+/* ===============================
+   CONTATO
+================================ */
+
+
+.contato {
+
+    padding:80px 8%;
+
+    text-align:center;
+
+}
+
+
+
+.contato p {
+
+    font-size:18px;
+
+    margin:10px;
+
+}
+
+
+
+
+
+
+/* ===============================
+   FOOTER
+================================ */
+
+
+footer {
+
+
+    background:#275c3d;
+
+    color:white;
+
+    text-align:center;
+
+    padding:40px;
+
+
+}
+
+
+
+
+
+
+
+
+/* ===============================
+   RESPONSIVO
+================================ */
+
+
+
+@media(max-width:900px){
+
+
+header {
+
+    flex-direction:column;
+
+    gap:20px;
+
+}
+
+
+
+nav {
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+}
+
+
+
+.hero h1 {
+
+    font-size:38px;
+
+}
+
+
+
+.grid-produtos {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.beneficios-grid {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.avaliacoes {
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+}

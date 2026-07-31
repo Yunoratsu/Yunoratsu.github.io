@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flora Bella | Flores que transformam momentos</title>
+
+    <meta name="description" content="Buquês, cestas e arranjos florais preparados com carinho. Compre flores online pelo WhatsApp.">
+
+    <meta name="keywords" content="floricultura, flores, buquê, presentes, rosas, cesta romântica">
+
+    <meta name="author" content="Flora Bella">
+
+    <link rel="icon" href="assets/favicon.png">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+
+
+<header>
+
+    <div class="logo">
+        🌸 Flora Bella
+    </div>
+
+
+    <nav>
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+    </nav>
+
+
+    <a class="btn-whatsapp" href="#" onclick="abrirWhatsApp()">
+        Comprar pelo WhatsApp
+    </a>
+
+</header>
+
+
+
+<main>
+
+
+<section class="hero" id="inicio">
+
+    <div class="hero-text">
+
+        <h1>
+            Flores que transformam momentos especiais
+        </h1>
+
+
+        <p>
+            Buquês e presentes preparados com carinho para todas as ocasiões.
+        </p>
+
+
+        <a href="#produtos" class="btn-primary">
+            Ver catálogo
+        </a>
+
+    </div>
+
+
+</section>
+
+
+
+
+<section id="produtos" class="produtos">
+
+
+<h2>
+Nosso Catálogo
+</h2>
+
+
+<div class="categorias">
+
+<button onclick="filtrarProdutos('todos')">
+Todos
+</button>
+
+<button onclick="filtrarProdutos('buque')">
+Buquês
+</button>
+
+<button onclick="filtrarProdutos('cesta')">
+Cestas
+</button>
+
+<button onclick="filtrarProdutos('arranjo')">
+Arranjos
+</button>
+
+<button onclick="filtrarProdutos('presente')">
+Presentes
+</button>
+
+</div>
+
+
+
+
+<div class="grid-produtos">
+
+
+
+<!-- ============================
+     PRODUTO 1
+     COPIE ESTE BLOCO PARA CRIAR NOVOS PRODUTOS
+================================ -->
+
+
+<div class="produto" data-categoria="buque">
+
+
+<img src="assets/img/buque-rosas.jpg" alt="Buquê Rosas Vermelhas">
+
+
+<h3>
+Buquê Rosas Vermelhas
+</h3>
+
+
+<p>
+12 rosas vermelhas selecionadas com embalagem premium.
+</p>
+
+
+<strong>
+R$ 99,90
+</strong>
+
+
+<button onclick="comprarProduto('Buquê Rosas Vermelhas')">
+Comprar agora
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- ============================
+     PRODUTO 2
+================================ -->
+
+
+<div class="produto" data-categoria="cesta">
+
+
+<img src="assets/img/cesta-romantica.jpg" alt="Cesta Romântica">
+
+
+<h3>
+Cesta Romântica
+</h3>
+
+
+<p>
+Cesta especial com flores, chocolates e detalhes elegantes.
+</p>
+
+
+<strong>
+R$ 159,90
+</strong>
+
+
+<button onclick="comprarProduto('Cesta Romântica')">
+Comprar agora
+</button>
+
+
+</div>
+
+
+
+
+
+
+<!-- ============================
+     PRODUTO 3
+================================ -->
+
+
+<div class="produto" data-categoria="arranjo">
+
+
+<img src="assets/img/arranjo-nobres.jpg" alt="Arranjo Flores Nobres">
+
+
+<h3>
+Arranjo Flores Nobres
+</h3>
+
+
+<p>
+Combinação sofisticada de flores nobres para decorar ambientes.
+</p>
+
+
+<strong>
+R$ 129,90
+</strong>
+
+
+<button onclick="comprarProduto('Arranjo Flores Nobres')">
+Comprar agora
+</button>
+
+
+</div>
+
+
+
+</div>
+
+</section>
+
+
+
+
+
+
+<section id="sobre" class="sobre">
+
+
+<h2>
+Sobre a Flora Bella
+</h2>
+
+
+<p>
+
+A Flora Bella nasceu com o propósito de transformar sentimentos em experiências únicas.
+Nossa equipe seleciona cada flor cuidadosamente para criar presentes marcantes,
+com qualidade, beleza e muito carinho.
+
+</p>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="beneficios">
+
+
+<h2>
+Por que escolher a Flora Bella?
+</h2>
+
+
+<div class="beneficios-grid">
+
+
+<div>
+<h3>✓ Entrega rápida</h3>
+<p>Flores chegando frescas até você.</p>
+</div>
+
+
+<div>
+<h3>✓ Flores frescas</h3>
+<p>Selecionadas diariamente.</p>
+</div>
+
+
+<div>
+<h3>✓ Atendimento personalizado</h3>
+<p>Montamos presentes especiais.</p>
+</div>
+
+
+<div>
+<h3>✓ Pagamento facilitado</h3>
+<p>Opções práticas para você.</p>
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+<section class="depoimentos">
+
+
+<h2>
+O que nossos clientes dizem
+</h2>
+
+
+
+<div class="avaliacoes">
+
+
+<p>
+"Meu pedido chegou perfeito e muito bonito. Recomendo!"
+<br>
+⭐ ⭐ ⭐ ⭐ ⭐
+</p>
+
+
+<p>
+"O buquê surpreendeu muito, qualidade incrível."
+<br>
+⭐ ⭐ ⭐ ⭐ ⭐
+</p>
+
+
+<p>
+"Atendimento rápido e flores maravilhosas."
+<br>
+⭐ ⭐ ⭐ ⭐ ⭐
+</p>
+
+
+<p>
+"Melhor floricultura que já comprei."
+<br>
+⭐ ⭐ ⭐ ⭐ ⭐
+</p>
+
+
+<p>
+"Presente perfeito para uma data especial."
+<br>
+⭐ ⭐ ⭐ ⭐ ⭐
+</p>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<section id="contato" class="contato">
+
+
+<h2>
+Contato
+</h2>
+
+
+<p>
+📱 WhatsApp:
+(11) 99999-9999
+</p>
+
+
+<p>
+📸 Instagram:
+@florabella
+</p>
+
+
+<p>
+📍 Endereço:
+Rua das Flores, 100 - São Paulo
+</p>
+
+
+<p>
+⏰ Horário:
+Segunda a sábado - 08h às 18h
+</p>
+
+
+</section>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<footer>
+
+
+<h3>
+🌸 Flora Bella
+</h3>
+
+
+<p>
+Flores que carregam sentimentos.
+</p>
+
+
+<p>
+© 2026 Flora Bella - Todos os direitos reservados.
+</p>
+
+
+</footer>
+
+
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
